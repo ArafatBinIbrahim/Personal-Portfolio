@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kazi Arafat Bin Ibrahim — Full-Stack Software and AI/ML Engineering student at BRAC University.">
+    <meta name="theme-color" content="#050505">
+    <title>Kazi Arafat Bin Ibrahim | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar">
+        <a href="#home" class="logo"><span>Kazi Arafat</span> Bin Ibrahim</a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+
+        <nav id="navMenu">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero section" id="home">
+            <div class="hero-grid"></div>
+
+            <div class="hero-top">
+                <div class="particle-photo-wrap">
+                    <div class="particle-photo">
+                        <canvas id="particleCanvas" aria-label="Interactive dotted portrait"></canvas>
+                        <img id="sourcePhoto" src="assets/profile.jpg" alt="Kazi Arafat Bin Ibrahim">
+                        <div class="photo-corner corner-tl"></div>
+                        <div class="photo-corner corner-tr"></div>
+                        <div class="photo-corner corner-bl"></div>
+                        <div class="photo-corner corner-br"></div>
+                    </div>
+                </div>
+                <p class="interaction-hint"><span class="pulse-dot"></span> move your cursor over the portrait</p>
+            </div>
+
+            <div class="hero-copy reveal">
+                <p class="eyebrow">FULL-STACK SOFTWARE · AI / ML ENGINEERING</p>
+                <h1>Kazi Arafat <span>Bin Ibrahim</span></h1>
+                <p class="hero-text">
+                    Computer Science and Engineering student at BRAC University specializing in
+                    Python, Django / DRF, React.js, Node.js, Express.js, next.js and Artificial Intelligence & Machine Learning.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn primary" href="#projects">View Projects <span>↗</span></a>
+                    <a class="btn text-btn" href="#contact">Get in touch <span>→</span></a>
+                </div>
+            </div>
+
+            <div class="quick-info reveal">
+                <div>
+                    <small>Currently</small>
+                    <strong>BRAC University</strong>
+                </div>
+                <div>
+                    <small>Focus</small>
+                    <strong>Full-Stack · AI · ML</strong>
+                </div>
+                <div>
+                    <small>Problem Solving</small>
+                    <strong>Codeforces/Leetcode</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section content-section reveal" id="about">
+            <div class="section-label"><span>01</span> / ABOUT</div>
+            <div class="two-column">
+                <div>
+                    <p class="section-kicker">A short introduction</p>
+                    <h2>Building software with <span>purpose.</span></h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        I am a Full-Stack Software and AI/ML Engineering student at BRAC University,
+                        specializing in Python (Django / DRF), React.js, Node.js, Express.js, next.js and Artificial Intelligence
+                        and Machine Learning applications.
+                    </p>
+                    <p>
+                        My work includes decoupled RESTful applications, predictive machine learning
+                        models, dynamic user interfaces, and algorithmic problem solving.
+                    </p>
+
+                    <div class="stat-row">
+                        <div class="stat"><strong>20+</strong><span>Projects</span></div>
+                        <div class="stat"><strong>45K</strong><span>ML dataset records</span></div>
+                        <div class="stat"><strong>14</strong><span>ML dataset features</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section content-section reveal" id="education">
+            <div class="section-label"><span>02</span> / EDUCATION</div>
+            <div class="education-card">
+                <div class="edu-index">01</div>
+                <div class="edu-main">
+                    <p class="card-kicker">CURRENTLY ENROLLED</p>
+                    <h3>B.Sc in Computer Science and Engineering</h3>
+                    <p>BRAC University</p>
+                </div>
+                <div class="edu-arrow">↗</div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section content-section skills-section reveal" id="skills">
+            <div class="section-label"><span>03</span> / SKILLS</div>
+            <div class="skills-heading">
+                <div>
+                    <p class="section-kicker">Tools I work with</p>
+                    <h2>Skills that <span>ship.</span></h2>
+                </div>
+                <p class="section-description">
+                    A project-based view of the technologies I have actually used across my
+                    machine-learning, backend, API, and frontend projects.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-map" data-skill="ml">
+                    <div class="skill-map-head">
+                        <div><span class="skill-no">01</span><h3>Machine Learning</h3></div>
+                        <span class="skill-count">01 PROJECT</span>
+                    </div>
+                    <div class="radar-wrap">
+                        <canvas class="radar" data-labels="Python,Scikit-Learn,Pandas,NumPy,EDA"></canvas>
+                    </div>
+                    <div class="skill-tags"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>NumPy</span><span>EDA</span></div>
+                    <p>Loan Default Risk Prediction System</p>
+                </article>
+
+                <article class="skill-map" data-skill="backend">
+                    <div class="skill-map-head">
+                        <div><span class="skill-no">02</span><h3>Backend & APIs</h3></div>
+                        <span class="skill-count">02 PROJECTS</span>
+                    </div>
+                    <div class="radar-wrap">
+                        <canvas class="radar" data-labels="Django,DRF,REST APIs,SQLite,AJAX / Fetch"></canvas>
+                    </div>
+                    <div class="skill-tags"><span>Django</span><span>DRF</span><span>REST APIs</span><span>SQLite</span><span>AJAX</span><span>Fetch API</span></div>
+                    <p>TaxiPark · Truck Service</p>
+                </article>
+
+                <article class="skill-map" data-skill="frontend">
+                    <div class="skill-map-head">
+                        <div><span class="skill-no">03</span><h3>Frontend</h3></div>
+                        <span class="skill-count">02 PROJECTS</span>
+                    </div>
+                    <div class="radar-wrap">
+                        <canvas class="radar" data-labels="JavaScript,React.js,Bootstrap,Routing,Responsive UI"></canvas>
+                    </div>
+                    <div class="skill-tags"><span>JavaScript</span><span>React.js</span><span>Bootstrap</span><span>React Router</span><span>Responsive UI</span></div>
+                    <p>TaxiPark · EduPress</p>
+                </article>
+
+                <article class="skill-map skill-map-wide" data-skill="engineering">
+                    <div class="skill-map-head">
+                        <div><span class="skill-no">04</span><h3>Software Engineering</h3></div>
+                        <span class="skill-count">4 PROJECTS</span>
+                    </div>
+                    <div class="engineering-layout">
+                        <div class="radar-wrap compact"><canvas class="radar" data-labels="API Design,Database Models,ML Integration,UI Components,Problem Solving"></canvas></div>
+                        <div class="engineering-copy">
+                            <p>Patterns that appear across the projects: RESTful backend design, database modelling, frontend integration, machine-learning workflows, and algorithmic problem solving.</p>
+                            <div class="skill-tags"><span>RESTful Design</span><span>Database Modelling</span><span>ML Workflow</span><span>Component UI</span><span>Algorithms</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="skills-footnote"><span></span> Radar values represent project exposure, not self-rated proficiency.</div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section content-section reveal" id="projects">
+            <div class="section-label"><span>04</span> / PROJECTS</div>
+            <div class="projects-heading">
+                <div>
+                    <p class="section-kicker">Selected work</p>
+                    <h2>Things I've <span>built.</span></h2>
+                </div>
+                <p class="section-description">
+                    A mix of AI/ML, backend engineering, APIs, and component-driven frontend work.
+                </p>
+            </div>
+
+            <div class="project-list">
+                <article class="project">
+                    <div class="project-number">01</div>
+                    <div class="project-main">
+                        <p class="project-tech">PYTHON · SCIKIT-LEARN · PANDAS · NUMPY · ML</p>
+                        <h3>Loan Default Risk Prediction System</h3>
+                        <p>
+                            Built supervised classification models using a financial dataset of
+                            45,000 records across 14 features. Performed EDA, handled class imbalance,
+                            and designed preprocessing and evaluation using F1-score and ROC-AUC.
+                        </p>
+                        <div class="project-tags"><span>Classification</span><span>EDA</span><span>ROC-AUC</span></div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </article>
+
+                <article class="project">
+                    <div class="project-number">02</div>
+                    <div class="project-main">
+                        <p class="project-tech">DJANGO · DRF · PYTHON · JAVASCRIPT · BOOTSTRAP · SQLITE</p>
+                        <h3>TaxiPark — Full-Stack Taxi Booking Platform</h3>
+                        <p>
+                            Developed RESTful APIs for booking logic, route payloads, and administrative
+                            records, with a responsive Bootstrap UI and AJAX-based form interactions.
+                        </p>
+                        <div class="project-tags"><span>Django REST</span><span>AJAX</span><span>SQLite</span></div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </article>
+
+                <article class="project">
+                    <div class="project-number">03</div>
+                    <div class="project-main">
+                        <p class="project-tech">DJANGO · DRF · PYTHON · FETCH API · SQLITE</p>
+                        <h3>Truck Service — Heavy Vehicle Maintenance Platform</h3>
+                        <p>
+                            Designed Django database models for service categories, spare parts
+                            inventories, and maintenance applications, connecting frontend forms
+                            to backend endpoints with the Fetch API.
+                        </p>
+                        <div class="project-tags"><span>Backend</span><span>REST API</span><span>Fetch API</span></div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </article>
+
+                <article class="project">
+                    <div class="project-number">04</div>
+                    <div class="project-main">
+                        <p class="project-tech">REACT.JS · REACT ROUTER DOM · JAVASCRIPT · BOOTSTRAP</p>
+                        <h3>EduPress — Online Learning Management System</h3>
+                        <p>
+                            Refactored a static landing page into a responsive component-driven
+                            educational web application with routing, interactive counters,
+                            testimonials, and a custom student login portal.
+                        </p>
+                        <div class="project-tags"><span>React</span><span>Routing</span><span>UI</span></div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section reveal" id="contact">
+            <div class="section-label"><span>05</span> / CONTACT</div>
+            <div class="contact-inner">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Let's build something <span>interesting.</span></h2>
+                <p class="contact-text">
+                    Open to connecting around software engineering, full-stack development,
+                    algorithms, and AI/ML applications.
+                </p>
+
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/kazi-arafat-bin-ibrahim-a48729370/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+                    <a href="https://github.com/ArafatBinIbrahim" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+                    <a href="https://codeforces.com/profile/KaziArafat" target="_blank" rel="noopener">Codeforces <span>↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2025 Kazi Arafat Bin Ibrahim</span>
+        <span>Built with HTML · CSS · JavaScript</span>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
